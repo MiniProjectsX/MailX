@@ -1,0 +1,3 @@
+# MailX
+
+OUR MINI PROJECT
