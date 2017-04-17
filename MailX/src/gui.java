@@ -10,7 +10,7 @@ import java.util.Properties;
 
 
 public class gui {
-	/// commit by samarth
+	/// new push by samarth
 	JFrame j = new JFrame("Mailx");
 	JLabel from,pass,to,sub,message;
 	JButton send,clear,quit;
