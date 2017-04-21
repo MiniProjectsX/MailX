@@ -7,6 +7,5 @@
 .idea/misc.xml
 .idea/modules.xml
 .idea/workspace.xml
-MailX/MailX.iml
-MailX/src/.DS_Store
 
+out/

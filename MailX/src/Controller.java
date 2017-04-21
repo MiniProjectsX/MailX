@@ -8,7 +8,7 @@ import javax.mail.internet.MimeMessage.RecipientType;
 import javax.swing.JOptionPane;
 
 public class Controller {
-	// THIS IS A CONTROLLER
+	//CONTROLLER
 	Controller(String user,String host,String password,String to2,String sub,String message){
 		Properties prop = new Properties();
 		prop.put("mail.smtp.host", host);
