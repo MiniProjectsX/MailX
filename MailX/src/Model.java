@@ -3,7 +3,7 @@ import java.awt.event.ActionListener;
 
 public class Model {
 	/// MODEL VIEW CONTROLLER (MVC)
-	/// THIS IS A MODEL
+	/// THIS IS MODEL
 	public static void main(String args[])
 	{
 		View g = new View();
