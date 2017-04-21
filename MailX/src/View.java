@@ -9,6 +9,8 @@ import javax.swing.JTextField;
 import javax.swing.ScrollPaneConstants;
 
 public class View {
+	// THIS IS VIEW
+
 	JFrame j = new JFrame("Mailx");
 	JLabel from,pass,to,sub,message;
 	JButton send,clear,quit;

@@ -2,8 +2,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Model {
-	/// testing push
-	
+	/// MODEL VIEW CONTROLLER (MVC)
+	/// THIS IS A MODEL
 	public static void main(String args[])
 	{
 		View g = new View();
