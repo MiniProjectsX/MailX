@@ -1,4 +1,5 @@
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -11,17 +12,17 @@ import javax.swing.ScrollPaneConstants;
 public class View {
 	JFrame j = new JFrame("Mailx");
 	JLabel from,pass,to,sub,message;
-	JButton send,clear,quit;
+	JButton send,clear,quit,attach;
 	JTextField from1,to1,sub1;
 	JPasswordField pass1;
 	JTextArea message1;
 	JPanel jp;
+	JFileChooser fc;
 	
 	View()
 	{
-		j.setVisible(true);
+		fc = new JFileChooser();
 		j.setSize(400, 470);
-		j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		j.setLayout(null);
 		
 		from = new JLabel("FROM :");
@@ -59,13 +60,16 @@ public class View {
 		scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		
 		send = new JButton("SEND");
-		send.setBounds(2+3, 380, 120, 30);
+		send.setBounds(2+2, 380, 90, 30);
 		
 		clear = new JButton("CLEAR");
-		clear.setBounds(124+3, 380, 120, 30);
+		clear.setBounds(102+2, 380, 90, 30);
 		
 		quit = new JButton("QUIT");
-		quit.setBounds(246+3, 380, 120, 30);
+		quit.setBounds(200+2, 380, 90, 30);
+		
+		attach = new JButton("ATTACH");
+		attach.setBounds(300+2, 380, 90, 30);
 		
 		jp = new JPanel();
 		j.add(from);
@@ -83,5 +87,10 @@ public class View {
 		j.add(send);
 		j.add(clear);
 		j.add(quit);	
+		j.add(attach);
+		
+		j.setVisible(true);
+		j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
+
